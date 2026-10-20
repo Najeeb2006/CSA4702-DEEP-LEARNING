@@ -1,4 +1,4 @@
-#CNN Design & Gradient-Based Training Convolution, pooling, stride/padding, initialization, CNN training Design and train a CNN for an image-classification problem
+# CNN Design & Gradient-Based Training Convolution, pooling, stride/padding, initialization, CNN training Design and train a CNN for an image-classification problem
 
 Forward propagation on medical image features using the Hadamard product, matrix multiplication and bias addition.
 
