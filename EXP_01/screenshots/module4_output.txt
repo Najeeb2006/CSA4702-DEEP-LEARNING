@@ -1,0 +1,24 @@
+Initial mini-batch loss: 3.7441   (untrained network; uniform guess = ln 5 = 1.6094)
+Gradient L2-norm per parameter tensor:
+  conv1/kernel   shape=(3, 3, 1, 16)    ||grad|| = 2.0400
+  conv1/bias     shape=(16,)            ||grad|| = 1.3135
+  conv2/kernel   shape=(3, 3, 16, 32)   ||grad|| = 5.5041
+  conv2/bias     shape=(32,)            ||grad|| = 0.8496
+  fc1/kernel     shape=(288, 64)        ||grad|| = 9.0175
+  fc1/bias       shape=(64,)            ||grad|| = 0.6220
+  output/kernel  shape=(64, 5)          ||grad|| = 5.2509
+  output/bias    shape=(5,)             ||grad|| = 0.6236
+
+Optimiser : Adam (lr=0.001)   Loss : sparse categorical cross-entropy
+Epochs    : 40   Batch size : 32   L2 : 0.001   Dropout : 0.3
+Epoch  1/40  loss=2.2335  acc=0.2171  val_loss=1.5683  val_acc=0.3600
+Epoch  5/40  loss=1.1348  acc=0.6371  val_loss=1.0035  val_acc=0.7467
+Epoch 10/40  loss=0.6658  acc=0.8029  val_loss=0.6529  val_acc=0.7600
+Epoch 15/40  loss=0.4899  acc=0.8514  val_loss=0.5084  val_acc=0.8400
+Epoch 20/40  loss=0.3526  acc=0.9343  val_loss=0.4235  val_acc=0.8533
+Epoch 25/40  loss=0.2967  acc=0.9571  val_loss=0.3685  val_acc=0.8933
+Epoch 30/40  loss=0.2360  acc=0.9743  val_loss=0.3484  val_acc=0.8933
+Epoch 35/40  loss=0.1870  acc=0.9829  val_loss=0.3145  val_acc=0.9333
+Epoch 40/40  loss=0.1826  acc=0.9886  val_loss=0.2929  val_acc=0.9067
+
+Final train accuracy: 0.9886 | final validation accuracy: 0.9067

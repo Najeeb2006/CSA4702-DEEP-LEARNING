@@ -1,0 +1,8 @@
+Kernel,Stride,Padding,Formula Output,Manual Output,Keras Output,Match
+3 x 3,1,0,14 x 14,14 x 14,14 x 14,Yes
+3 x 3,1,1,16 x 16,16 x 16,16 x 16,Yes
+3 x 3,2,0,7 x 7,7 x 7,7 x 7,Yes
+3 x 3,2,1,8 x 8,8 x 8,8 x 8,Yes
+5 x 5,1,0,12 x 12,12 x 12,12 x 12,Yes
+5 x 5,2,2,8 x 8,8 x 8,8 x 8,Yes
+7 x 7,1,0,10 x 10,10 x 10,10 x 10,Yes

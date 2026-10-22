@@ -1,0 +1,20 @@
+Input image shape      : (16, 16)
+Kernel (Sobel-x) shape : (3, 3)
+Feature map shape      : (14, 14)
+Max |manual - Keras|   : 1.1920928955078125e-07
+
+Table 2: Convolution output size for a 16 x 16 input
+Kernel  Stride  Padding Formula Output Manual Output Keras Output Match
+ 3 x 3       1        0        14 x 14       14 x 14      14 x 14   Yes
+ 3 x 3       1        1        16 x 16       16 x 16      16 x 16   Yes
+ 3 x 3       2        0          7 x 7         7 x 7        7 x 7   Yes
+ 3 x 3       2        1          8 x 8         8 x 8        8 x 8   Yes
+ 5 x 5       1        0        12 x 12       12 x 12      12 x 12   Yes
+ 5 x 5       2        2          8 x 8         8 x 8        8 x 8   Yes
+ 7 x 7       1        0        10 x 10       10 x 10      10 x 10   Yes
+
+Before pooling : (14, 14)  After 2x2 max-pool : (7, 7)
+Top-left 2x2 block:
+ [[0.    0.168]
+ [0.    0.053]]
+Max-pooled value  : 0.168

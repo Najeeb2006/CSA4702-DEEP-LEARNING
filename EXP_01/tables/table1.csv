@@ -1,0 +1,8 @@
+Field Group,Fields,Count
+Identifier,image_id,1
+Label,"class_id, class_name",2
+Shape geometry,"shape_size, center_x, center_y, rotation_deg",4
+Appearance,"intensity, noise_sigma",2
+Image statistics,"mean_brightness, contrast_std, edge_density, foreground_ratio",4
+Pixel values,"px_000 to px_255 (16 x 16 image, row-major)",256
+Total,-,269

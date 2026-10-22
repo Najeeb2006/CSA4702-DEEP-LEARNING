@@ -1,0 +1,5 @@
+Configuration,Learning Rate,L2,Dropout,Train Acc,Val Acc,Test Acc,Train - Val Gap
+SGD,0.01,0.001,0.3,0.8143,0.76,0.7467,0.0543
+SGD + Momentum (0.9),0.01,0.001,0.3,0.9771,0.9067,0.88,0.0705
+Adam,0.001,0.001,0.3,0.9886,0.9067,0.9067,0.0819
+"Adam, no regularisation",0.001,0.0,0.0,1.0,0.8933,0.92,0.1067

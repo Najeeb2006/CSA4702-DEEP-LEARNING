@@ -1,0 +1,28 @@
+Test loss: 0.3696 | Test accuracy: 0.9067
+
+Classification report (test set):
+              precision    recall  f1-score   support
+
+      Circle      0.800     0.800     0.800        15
+      Square      0.846     0.733     0.786        15
+    Triangle      0.882     1.000     0.938        15
+       Cross      1.000     1.000     1.000        15
+    Diagonal      1.000     1.000     1.000        15
+
+    accuracy                          0.907        75
+   macro avg      0.906     0.907     0.905        75
+weighted avg      0.906     0.907     0.905        75
+
+Confusion matrix:
+ [[12  2  1  0  0]
+ [ 3 11  1  0  0]
+ [ 0  0 15  0  0]
+ [ 0  0  0 15  0]
+ [ 0  0  0  0 15]]
+
+Table 4: Optimiser and regularisation comparison (40 epochs)
+          Configuration  Learning Rate    L2  Dropout  Train Acc  Val Acc  Test Acc  Train - Val Gap
+                    SGD          0.010 0.001      0.3     0.8143   0.7600    0.7467           0.0543
+   SGD + Momentum (0.9)          0.010 0.001      0.3     0.9771   0.9067    0.8800           0.0705
+                   Adam          0.001 0.001      0.3     0.9886   0.9067    0.9067           0.0819
+Adam, no regularisation          0.001 0.000      0.0     1.0000   0.8933    0.9200           0.1067

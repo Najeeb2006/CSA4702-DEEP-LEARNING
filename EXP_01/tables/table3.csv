@@ -1,0 +1,10 @@
+Layer,Type,Output Shape,Parameter Formula,Parameters
+conv1,Conv2D,16 x 16 x 16,(3x3x1+1) x 16,160
+pool1,MaxPooling2D,8 x 8 x 16,-,0
+conv2,Conv2D,6 x 6 x 32,(3x3x16+1) x 32,4640
+pool2,MaxPooling2D,3 x 3 x 32,-,0
+flatten,Flatten,288,-,0
+fc1,Dense,64,(288+1) x 64,18496
+dropout,Dropout,64,-,0
+output,Dense,5,(64+1) x 5,325
+Total,,,,23621
